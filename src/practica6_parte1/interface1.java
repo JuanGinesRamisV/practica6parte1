@@ -5,12 +5,14 @@
  */
 package practica6_parte1;
 
+import java.util.InputMismatchException;
+
 /**
  *
  * @author juang
  */
 public interface interface1 {
-    double calcularArea();
-    double calcularVolumen();
+    public double calcularArea () throws InputMismatchException;
+    public double calcularVolumen() throws ExcepcionPersonalizada;
     void imprimirCaracteristicas();
 }
